@@ -128,6 +128,7 @@ p {
 	text-decoration: none;
 	max-width: 150px;
 	letter-spacing: 1.5px;
+	transition: background-color .5s;
 }
 
 	.btn--white {
@@ -164,9 +165,9 @@ p {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 90%;
+	width: 95%;
 	height: 90px;
-	padding: 0 5%;
+	padding: 0 2.5%;
 	z-index: 10;
 }
 
@@ -181,21 +182,28 @@ p {
 		font-weight: 700;
 		font-size: 14px;
 		color: white;
-		margin-top: 38px;
+		margin-top: 36px;
 		text-decoration: none;
 	}
 
 		.main-header__menu-icon {
-			height: 14px;
+			height: 16px;
 			margin-right: 15px;
 			vertical-align: middle;
+		}
+
+		.main-header__menu-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 1.5px;
+			vertical-align: top;
 		}
 
 	.main-header__main-logo-link {
 		display: block;
 		float: right;
-		width: 185px;
-		margin-top: 30px;
+		width: 150px;
+		margin-top: 25px;
 	}
 
 		.main-header__main-logo-link img {
@@ -249,6 +257,14 @@ p {
 		height: 100%;
 	}
 
+		.gateway--runner:hover .btn {
+			background-color: @darkorange;
+		}
+
+		.gateway--coach:hover .btn {
+			background-color: @darkblue;
+		}
+
 	.gateway--coach {
 		position: relative;
 		float: right;
@@ -261,7 +277,7 @@ p {
 	.gateway__header {
 		font-size: 24px;
 		font-weight: 400;
-		letter-spacing: 1.5px;
+		letter-spacing: 1.75px;
 	}
 
 	.gateway__text {
@@ -292,7 +308,11 @@ p {
 
 	.main-header__main-logo-link {
 		width: 125px;
-		margin: 34px 0 0 0;
+		margin: 28px 0 0 0;
+	}
+
+	.main-header__menu-text {
+		font-size: 14px;
 	}
 
 	.gateway__text {

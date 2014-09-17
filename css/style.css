@@ -210,6 +210,7 @@ h2 {
   text-decoration: none;
   max-width: 150px;
   letter-spacing: 1.5px;
+  transition: background-color 0.5s;
 }
 .btn--white {
   border: white 2px solid;
@@ -233,9 +234,9 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 95%;
   height: 90px;
-  padding: 0 5%;
+  padding: 0 2.5%;
   z-index: 10;
 }
 .main-header header {
@@ -248,19 +249,25 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   color: white;
-  margin-top: 38px;
+  margin-top: 36px;
   text-decoration: none;
 }
 .main-header__menu-icon {
-  height: 14px;
+  height: 16px;
   margin-right: 15px;
   vertical-align: middle;
+}
+.main-header__menu-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  vertical-align: top;
 }
 .main-header__main-logo-link {
   display: block;
   float: right;
-  width: 185px;
-  margin-top: 30px;
+  width: 150px;
+  margin-top: 25px;
 }
 .main-header__main-logo-link img {
   width: 100%;
@@ -321,6 +328,12 @@ h2 {
   width: 50%;
   height: 100%;
 }
+.gateway--runner:hover .btn {
+  background-color: #bc5810;
+}
+.gateway--coach:hover .btn {
+  background-color: #0944b0;
+}
 .gateway--coach {
   position: relative;
   float: right;
@@ -332,7 +345,7 @@ h2 {
 .gateway__header {
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
 }
 .gateway__text {
   width: 60%;
@@ -352,7 +365,10 @@ h2 {
 @media (max-width: 720px) {
   .main-header__main-logo-link {
     width: 125px;
-    margin: 34px 0 0 0;
+    margin: 28px 0 0 0;
+  }
+  .main-header__menu-text {
+    font-size: 14px;
   }
   .gateway__text {
     width: 80%;

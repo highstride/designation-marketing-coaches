@@ -41,6 +41,8 @@ var Gateway = {
 		this.$gatewaySections = this.$gateway.find(".gateway-section");
 		this.$coachOverlay = this.$gateway.find(".coach-overlay");
 		this.$runnerOverlay = this.$gateway.find(".runner-overlay");
+		this.$coachButton = this.$gateway.find(".gateway__coach-button");
+		this.$runnerButton = this.$gateway.find(".gateway__runner-button");
 		this.initDom();
 		this.initEvents();
 	},
