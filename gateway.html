@@ -19,29 +19,48 @@
 		</script> -->
 	</head>
 	<body>
-		<div class="main-header__bg"></div>
+		<!-- <div class="main-header__bg"></div> -->
 		<div class="main-header">
 			<header class="max-width-wrapper">
 				<a href="#" class="main-header__menu-group">
 					<img src="img/menu_icon.png" class="main-header__menu-icon">
 					<span class="main-header__menu-text">MENU</span>
 				</a>
-				<a href="#" class="main-header__main-logo-link">
+				<nav class="nav-menu">
+				  	<ul class="nav-menu__nav-list">
+						<li><a href="#top">Home</a></li>
+						<li><a href="http://blog.highstriderun.com/">Blog</a></li>
+						<li><a href="http://blog.highstriderun.com/store/">Store</a></li>
+					    <li><a href="#download">Download App</a></li>
+					</ul>
+					<ul class="nav-menu__legal-items">
+					    <li><a href="documents/HighStride%20Terms%20of%20Use.pdf" target="_blank">Terms of service</a></li>
+					    <li><a href="documents/HighStride%20Privacy%20Policy.pdf" target="_blank">Privacy Policy</a></li>
+					</ul>
+				    <div class="nav-menu__social-icons">
+				    	<a href="https://www.facebook.com/Highstride" target="_blank"><img src="http://www.highstriderun.com/images/social-facebook-gray.png" width="26" height="27" alt="Social - Facebook"></a>
+						<a href="https://twitter.com/HighStride" target="_blank"><img src="http://www.highstriderun.com/images/social-twitter-gray.png" width="27" height="27" alt="Social - Twitter"></a>
+				    	<a href="https://www.youtube.com/watch?v=TNYTdGiBN1E" target="_blank"><img src="http://www.highstriderun.com/images/social-google-plus-gray.png" width="26" height="27" alt="Social - Google+"></a>
+				    	<a href="mailto:support@highstriderun.com"><img src="http://www.highstriderun.com/images/social-email-gray.png" width="27" height="27" alt="Social - Email"></a>
+				  	</div>
+				</nav>
+				<a href="http://www.highstriderun.com" class="main-header__main-logo-link">
 					<img src="img/highstride.png">
 				</a>
 			</header>
 		</div>
 		<div class="gateway">
-			<div class="gateway--runner">
-				<div class="gateway__black-overlay">
+			<div class="gateway--runner gateway-section">
+				<div class="gateway__black-overlay runner-overlay">
 					<div class="gateway__text">
 						<h2 class="gateway__header">Take part in the best race of your life</h2>
 						<a href="#" class="btn btn--orange gateway__runner-button">Runners</a>
 					</div>
 				</div>
 			</div>
-			<div class="gateway--coach">
-				<div class="gateway__black-overlay">
+			<div class="gateway__divider"></div>
+			<div class="gateway--coach gateway-section">
+				<div class="gateway__black-overlay coach-overlay">
 					<div class="gateway__text">
 						<h2 class="gateway__header">Lorem ipsum dolor site amet consectetur</h2>
 						<a href="#" class="btn btn--blue gateway__coach-button">Coaches</a>
@@ -51,6 +70,6 @@
 		</div>
 	<script src="js/live.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/global.min.js"></script>
+	<script src="js/script.js"></script>
 	</body>
 </html>
