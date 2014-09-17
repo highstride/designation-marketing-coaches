@@ -132,16 +132,32 @@ body {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 50pt;
   text-transform: uppercase;
+  letter-spacing: 1.75px;
 }
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 34px;
   line-height: 1.5em;
   text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: .75px;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 /*----------------------------------------*\
     #COMPONENTS
@@ -200,15 +216,15 @@ h2 {
   margin: 0 auto;
 }
 .btn {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  padding: 18px 36px;
+  text-align: center;
+  padding: 18px 18px;
   color: white;
   font-weight: 400;
   text-decoration: none;
-  max-width: 150px;
   letter-spacing: 1.5px;
   transition: background-color 0.5s;
 }
@@ -242,6 +258,16 @@ h2 {
 .main-header header {
   overflow: hidden;
 }
+.main-header__black-background {
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .main-header__menu-group {
   display: block;
   float: left;
@@ -249,16 +275,16 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   color: white;
-  margin-top: 36px;
+  margin-top: 40px;
   text-decoration: none;
 }
 .main-header__menu-icon {
-  height: 16px;
+  height: 14px;
   margin-right: 15px;
   vertical-align: middle;
 }
 .main-header__menu-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.5px;
   vertical-align: top;
@@ -266,15 +292,104 @@ h2 {
 .main-header__main-logo-link {
   display: block;
   float: right;
-  width: 150px;
+  width: 185px;
   margin-top: 25px;
 }
 .main-header__main-logo-link img {
   width: 100%;
 }
+.hero-area {
+  width: 100%;
+  height: 600px;
+}
+.hero-area.coach-bg {
+  background: #767676 url(../img/two_runners_street_bg.jpg) no-repeat 50% 0%;
+  background-size: cover;
+}
+.hero-area__text {
+  width: 40%;
+  margin-left: 9%;
+  margin-top: 16.5%;
+}
+.hero-area__text h1 {
+  color: white;
+  text-align: left;
+  line-height: 1.2em;
+}
+.hero-area__text .btn {
+  margin-top: 50px;
+}
+.teasers-section {
+  color: #333333;
+  padding: 84px 0;
+}
+.teasers-section__teasers {
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 0 100px;
+}
+.teasers-section__teasers li {
+  display: block;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+.teasers-section__teasers li:last-child {
+  margin-right: 0;
+}
+.teasers-section__teasers h3 {
+  padding: 33px 35px 20px 35px;
+}
+.teasers-section__teasers p {
+  padding: 0 35px;
+}
+.call-to-action-section {
+  background-color: #3084d4;
+  padding: 84px 0;
+  text-align: center;
+  color: white;
+}
+.call-to-action-section .btn {
+  margin: 0 auto;
+}
+.call-to-action-section h2 {
+  margin: 0 0 20px 0;
+}
+.call-to-action-section p {
+  margin: 0 0 50px 0;
+}
+.call-to-action-section__text {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.contact-section {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 62px 0;
+}
+.contact-section h3 {
+  margin: 0 0 33px 0;
+}
+.contact-section__social-icons {
+  max-width: 286px;
+  display: block;
+  margin: 0 auto 33px;
+}
+.contact-section__social-icons a {
+  width: 15%;
+  margin: 0 5%;
+}
 .gateway {
   width: 100%;
   height: 100%;
+}
+.gateway .btn {
+  padding: 18px 36px;
+  display: inline-block;
+  max-width: 150px;
 }
 .gateway__divider {
   width: 1px;
@@ -388,8 +503,6 @@ h2 {
     width: 100%;
   }
   .gateway__divider {
-    height: 1px;
-    width: 100%;
-    position: relative;
+    display: none;
   }
 }
