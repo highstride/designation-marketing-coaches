@@ -198,9 +198,13 @@ p {
 		margin-top: 30px;
 	}
 
+		.main-header__main-logo-link img {
+			width: 100%;
+		}
+
 .gateway {
 	width: 100%;
-	height: 500px;
+	height: 100%;
 }
 
 	.gateway__divider {
@@ -257,10 +261,11 @@ p {
 	.gateway__header {
 		font-size: 24px;
 		font-weight: 400;
+		letter-spacing: 1.5px;
 	}
 
 	.gateway__text {
-		width: 50%;
+		width: 60%;
 		color: white;
 		text-align: center;
 		margin: 0 auto;
@@ -285,13 +290,35 @@ p {
 
 @media (max-width: 720px) {
 
+	.main-header__main-logo-link {
+		width: 125px;
+		margin: 34px 0 0 0;
+	}
+
+	.gateway__text {
+		width: 80%;
+	}
+
 	.gateway__text .btn {
 		font-size: 14px;
+		margin-top: 20px;
 	}
 
 	.gateway__header {
 		font-size: 20px;
 		font-weight: 400;
+	}
+
+	.gateway--coach, .gateway--runner {
+		float: none;
+		height: 50%;
+		width: 100%;
+	}
+
+	.gateway__divider {
+		height: 1px;
+		width: 100%;
+		position: relative;
 	}
 }
 

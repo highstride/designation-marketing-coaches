@@ -71,5 +71,4 @@ $(document).ready(function() {
 	NavMenu.init();
 	Gateway.init();
 	
-	
 });
