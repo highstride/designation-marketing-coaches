@@ -43,6 +43,15 @@ h2 {
 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.5em;
 	text-transform: uppercase;
@@ -54,6 +63,10 @@ p {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 1.5em;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -283,7 +296,7 @@ p {
 		margin-right: 0;
 	}
 
-		.teasers-section__teasers h3 {
+		.teasers-section__teasers h4 {
 			padding: 33px 35px 20px 35px;
 		}
 
@@ -327,16 +340,32 @@ p {
 		margin: 0 0 33px 0;
 	}
 
+
 	.contact-section__social-icons {
-		max-width: 286px;
+		width: 286px;
 		display: block;
-		margin: 0 auto 33px;
+		margin: 0 auto 50px;
+		overflow: auto;
+		overflow-y: hidden;
 	}
 
 	.contact-section__social-icons a {
-		width: 15%;
-		margin: 0 5%;
+		display: block;
+		width: 25%;
+		float: left;
+	}
 
+	.contact-section__legal-items p {
+		font-size: 12px;
+		margin-bottom: 6px;
+		letter-spacing: 0.8px;
+	}
+
+	.contact-section__legal-items a {
+		color: white;
+		font-size: 12px;
+		margin-right: 15px;
+		letter-spacing: 0.8px;
 	}
 
 
