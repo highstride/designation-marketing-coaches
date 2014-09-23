@@ -141,7 +141,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 34px;
-  line-height: 1.5em;
+  line-height: 1.25em;
   text-transform: uppercase;
   letter-spacing: 4.5px;
 }
@@ -548,15 +548,16 @@ a {
   }
   .gateway__text {
     width: 80%;
-    top: 40%;
+    bottom: 10%;
   }
   .gateway__text .btn {
     font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 10px 20px;
   }
   .gateway__header {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
   .gateway--coach {
